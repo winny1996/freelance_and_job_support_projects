@@ -52,7 +52,7 @@ source ~/.bash_profile
 ```
 cd cri-dockerd
 mkdir bin
-apt get && apt build -o bin/cri-dockerd
+go get && go build -o bin/cri-dockerd
 mkdir -p /usr/local/bin
 install -o root -g root -m 0755 bin/cri-dockerd /usr/local/bin/cri-dockerd
 cp -a packaging/systemd/* /etc/systemd/system
